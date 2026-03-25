@@ -1,20 +1,14 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>AI Poem Generator</title>
-  </head>
-  <body>
-    <div class="container"></div>
-      <h1>Welcome to the AI Poem Generator</h1>
-      <main>
-        <form id="poem-form">
+<body>
+  <div class="container">
+    <h1>Welcome to the AI Poem Generator</h1>
+
+    <main>
+      <form id="poem-form">
         <label for="theme">Enter a theme for your poem:</label>
         <input type="text" id="theme" name="theme" required />
         <button type="submit">Submit</button>
       </form>
+
       <div id="poem-container"></div>
     </main>
 
@@ -35,7 +29,5 @@
         >hosted on Netlify</a
       >
     </footer>
-    <script src="index.js"></script>
   </div>
-  </body>
-</html>
+</body>
