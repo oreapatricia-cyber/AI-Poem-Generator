@@ -1,1 +1,2 @@
-let poemFormElement = document.getElementById("poemForm");
+let poemFormElement = document.querySelector("#poem-form");
+poemFormElement.addEventListener("submit", generatePoem);
