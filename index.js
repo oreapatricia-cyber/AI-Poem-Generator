@@ -1,8 +1,7 @@
 function displayPoem(response) {
   let poem = response.data.answer;
-
-  // Clear previous poem before typing the new one
-  document.querySelector("#poem-display").innerHTML = "";
+  poemFormElement.innerHTML =
+    "Cuántas veces, amor, te amé sin verte y tal vez sin recuerdo,";
 
   new Typewriter("#poem-display", {
     strings: poem,
