@@ -94,7 +94,7 @@ button:hover {
   margin-right: auto;
 }
 
-#poem-display:empty {
+#poem:empty {
   display: none;
 }
 
