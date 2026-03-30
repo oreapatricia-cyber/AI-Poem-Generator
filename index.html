@@ -11,16 +11,16 @@
 
   <body>
     <div class="container">
-      <h1>Welcome to the AI Poem Generator</h1>
+      <h1>AI Poem Generator</h1>
 
       <main>
         <form id="poem-generator-form">
           <label for="theme">Enter a theme for your poem:</label>
           <input type="text" id="theme" name="theme" required />
-          <button type="submit">Submit</button>
+          <button type="submit">Generate Poem</button>
         </form>
 
-        <!-- Hidden until poem appears -->
+        <!-- Loader + Poem Output -->
         <div id="loading" class="loading"></div>
         <div class="poem" id="poem"></div>
       </main>
