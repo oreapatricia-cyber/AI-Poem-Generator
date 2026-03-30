@@ -1,19 +1,38 @@
 function displayPoem(response) {
+  let poem = response.data.answer;
+
+  // Clear previous poem before typing the new one
+  document.querySelector("#poem-display").innerHTML = "";
+
   new Typewriter("#poem-display", {
-    strings: response.data.answer,
+    strings: poem,
     autoStart: true,
-    delay: 1,
+    delay: 20,
     cursor: "",
   });
 }
+
 function generatePoem(event) {
   event.preventDefault();
+
   let ApiKey = "94bo483a37241b0t66efb57f3864046e";
-  let prompt = "Generate a Spanish poem about Love";
+  let themeInput = document.querySelector("#theme").value;
+
+  let prompt = `Write a beautiful and emotional poem in Spanish about the theme: "${themeInput}". 
+  The poem should be expressive, poetic, and rich in imagery.`;
+
   let context =
-    "You are a poet who writes beautiful poems about love in Spanish.";
-  let APiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${ApiKey}`;
-  axios.get(APiUrl).then(displayPoem);
+    "You are a skilled poet who writes deep, romantic, and artistic poems in Spanish.";
+
+  let apiUrl = "https://api.shecodes.io/ai/v1/generate";
+
+  axios
+    .post(apiUrl, {
+      prompt: prompt,
+      context: context,
+      key: ApiKey,
+    })
+    .then(displayPoem);
 }
 
 let poemFormElement = document.querySelector("#poem-form");
