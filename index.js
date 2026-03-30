@@ -12,6 +12,7 @@ function generatePoem(event) {
   let prompt = "Generate a Spanish poem about Love";
   let context = "";
   let APiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${ApiKey}`;
+  axios.get(APiUrl).then(displayPoem);
 }
 
 let poemFormElement = document.querySelector("#poem-form");
