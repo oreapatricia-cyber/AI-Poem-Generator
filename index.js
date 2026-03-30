@@ -1,10 +1,14 @@
 function displayPoem(response) {
   console.log("#poem");
+
+  document.querySelector("#poem").style.display = "block"; // <-- FIX
+
   new Typewriter("#poem", {
     strings: response.data.answer,
     autoStart: true,
     delay: 1,
   });
+
   document.querySelector("#loading").style.display = "none";
 }
 
