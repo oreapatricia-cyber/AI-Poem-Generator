@@ -5,10 +5,6 @@ function generatePoem(event) {
     autoStart: true,
     delay: 1,
   });
-
-  let poemElement = document.querySelector("#poem");
-  poemElement.innerHTML =
-    "Cuántas veces, amor, te amé sin verte y tal vez sin recuerdo,";
 }
 
 let poemFormElement = document.querySelector("#poem-generator-form");
