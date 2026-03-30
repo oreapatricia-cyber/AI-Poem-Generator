@@ -4,6 +4,8 @@ function displayPoem(response) {
     strings: response.data.answer,
     autoStart: true,
     delay: 1,
+
+    document.querySelector("#loading").style.display = "none",
   });
 }
 
