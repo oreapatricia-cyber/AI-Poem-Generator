@@ -1,3 +1,4 @@
+/* GENERAL LAYOUT */
 body {
   font-family: "Poppins", sans-serif;
   background: #f7f2ff;
@@ -15,17 +16,12 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   text-align: center;
 }
+
+/* TITLE */
 h1 {
   font-size: 28px;
   color: #6a2c91;
   margin-bottom: 25px;
-}
-
-/* MAIN LAYOUT */
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* FORM */
@@ -57,6 +53,8 @@ input[type="text"]:focus {
   outline: none;
   box-shadow: 0 0 8px rgba(178, 139, 255, 0.4);
 }
+
+/* BUTTON */
 button {
   background: #6a2c91;
   color: white;
@@ -70,7 +68,11 @@ button {
 
 button:hover {
   background: #8a3bb8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(178, 139, 255, 0.3);
 }
+
+/* LOADING SHIMMER */
 .loading {
   display: none;
   height: 20px;
@@ -91,8 +93,10 @@ button:hover {
     background-position: -200% 0;
   }
 }
+
+/* POEM BOX */
 #poem {
-  display: none; /* hidden until content appears */
+  display: none;
   background: #f3eaff;
   padding: 25px 30px;
   border-radius: 15px;
