@@ -24,7 +24,7 @@ function generatePoem(event) {
   let context =
     "You are a skilled poet who writes deep, romantic, and artistic poems in Spanish.";
 
-  let apiUrl = "https://api.shecodes.io/ai/v1/generate";
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${ApiKey}`;
 
   axios
     .post(apiUrl, {
