@@ -1,6 +1,6 @@
 function displayPoem(response) {
   new Typewriter("#poem", {
-    strings: "Cuántas veces, amor, te amé sin verte y tal vez sin recuerdo,",
+    strings: response.data.answer,
     autoStart: true,
     delay: 1,
   });
