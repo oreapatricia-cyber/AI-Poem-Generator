@@ -94,6 +94,10 @@ button:hover {
   margin-right: auto;
 }
 
+#poem-display:empty {
+  display: none;
+}
+
 /* FOOTER */
 footer {
   margin-top: 40px;
