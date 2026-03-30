@@ -9,6 +9,8 @@ function displayPoem(response) {
 function generatePoem(event) {
   event.preventDefault();
   let ApiKey = "94bo483a37241b0t66efb57f3864046e";
+  let prompt = "Generate a Spanish poem about Love";
+  let context = "";
   let APiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${ApiKey}`;
 }
 
