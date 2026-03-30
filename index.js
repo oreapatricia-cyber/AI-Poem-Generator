@@ -40,19 +40,13 @@ function generatePoem(event) {
       poemBox.style.display = "block";
       poemBox.innerHTML = "";
     });
-        prompt: prompt,
-        context: context,
-        key: ApiKey,
-      },
-    })
-    .then(displayPoem)
-    .catch((error) => {
-      loading.style.display = "none";
-      poemBox.style.display = "block";
-      poemBox.innerHTML = "⚠️ Something went wrong. Please try again.";
-      console.log(error);
-    });
 }
+then(displayPoem).catch((error) => {
+  loading.style.display = "none";
+  poemBox.style.display = "block";
+  poemBox.innerHTML = "⚠️ Something went wrong. Please try again.";
+  console.log(error);
+});
 
 document
   .querySelector("#poem-generator-form")
