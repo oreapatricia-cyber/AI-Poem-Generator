@@ -16,7 +16,6 @@ function generatePoem(event) {
   event.preventDefault();
 
   let ApiKey = "94bo483a37241b0t66efb57f3864046e";
-  let themeInput = document.querySelector("#theme").value;
 
   let prompt = `Write a beautiful and emotional poem in Spanish about the theme: "${themeInput}". 
   The poem should be expressive, poetic, and rich in imagery.`;
