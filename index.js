@@ -1,5 +1,8 @@
 function generatePoem(event) {
   event.preventDefault();
+new Typewriter('#poem', {
+  strings: "Cuántas veces, amor, te amé sin verte y tal vez sin recuerdo,",
+  autoStart: true,
 
   let poemElement = document.querySelector("#poem");
   poemElement.innerHTML =
