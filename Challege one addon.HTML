@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Input Types Challenges</title>
+  </head>
+  <body>
+    <!-- Challenge 1 -->
+    <h2>Challenge 1</h2>
+    <label for="thoughts">What's on your mind?</label>
+    <input type="search" id="thoughts" name="thoughts" />
+
+    <!-- Challenge 2 -->
+    <h2>Challenge 2</h2>
+    <form action="/submit" method="post">
+      <label for="birthdate">What is your birth date?</label>
+      <input type="date" id="birthdate" name="birthdate" />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Challenge 3 -->
+    <h2>Challenge 3</h2>
+    <fieldset>
+      <legend>What is your favorite primary color?</legend>
+
+      <input type="radio" id="blue" name="favoriteColor" value="blue" />
+      <label for="blue">Blue</label>
+
+      <input type="radio" id="yellow" name="favoriteColor" value="yellow" />
+      <label for="yellow">Yellow</label>
+
+      <input type="radio" id="red" name="favoriteColor" value="red" />
+      <label for="red">Red</label>
+    </fieldset>
+
+    <!-- Challenge 4 -->
+    <h2>Challenge 4</h2>
+    <fieldset>
+      <legend>How do you like to travel?</legend>
+
+      <input type="checkbox" id="plane" name="travel" value="plane" />
+      <label for="plane">Plane</label>
+
+      <input type="checkbox" id="bus" name="travel" value="bus" />
+      <label for="bus">Bus</label>
+
+      <input type="checkbox" id="train" name="travel" value="train" />
+      <label for="train">Train</label>
+
+      <input type="checkbox" id="car" name="travel" value="car" />
+      <label for="car">Car</label>
+
+      <input type="checkbox" id="walking" name="travel" value="walking" />
+      <label for="walking">Walking</label>
+    </fieldset>
+  </body>
+</html>
